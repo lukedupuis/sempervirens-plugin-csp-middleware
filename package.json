@@ -15,6 +15,7 @@
     "Express",
     "plugins",
     "middleware",
+    "Content-Security-Policy",
     "CSP"
   ],
   "author": "Luke Dupuis",
