@@ -2,6 +2,10 @@
 
 An interface for adding Content-Security-Policy Express response headers. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" target="_blank">MDN Web Docs: "Content Security Policy (CSP)"</a> for more information about the header. `cspMiddleware` may also be used to add nonces to script tags. See <a href="https://content-security-policy.com/nonce/" target="_blank">Content Security Policy.com: "Using a nonce with CSP"</a> for more information about nonces.
 
+## Installation
+
+`npm i @sempervirens/plugin-csp-middleware`
+
 ## Usage
 
 ```
