@@ -1,13 +1,8 @@
-# Sempervirens Plugin: CSP Middleware
-
-An interface for adding Content-Security-Policy Express response headers. See <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" target="_blank">MDN Web Docs: "Content Security Policy (CSP)"</a> for more information about the header. `cspMiddleware` may also be used to add nonces to script tags. See <a href="https://content-security-policy.com/nonce/" target="_blank">Content Security Policy.com: "Using a nonce with CSP"</a> for more information about nonces.
-
-## Usage
-
-```
 import Server from '@sempervirens/server';
 import { RequestHandler } from '@sempervirens/endpoint';
-import { cspMiddleware } from '@sempervirens/plugins';
+// import { cspMiddleware } from '@sempervirens/plugins';
+
+import { cspMiddleware } from '../index.js';
 
 // Example only, separate file recommended
 const template = ({ nonces, firstName = 'World' }) => {
@@ -67,16 +62,3 @@ const siteLoaderConfig = {
 }
 
 new Server({ sites: [siteLoaderConfig] }).start();
-```
-
-## API
-
-`cspMiddleware(policies)`
-
-### policies
-
-Required. A key:value object with the policy name as the key. For example, `script-src`. The value is a space-delimited string or an array of strings containing each of the allowed items. For example, `'example.com example.net'` or `['example.com', 'example.net']`.
-
-### res.getNonce
-
-Adds a nonce to the "Content-Security-Policy" header. It also returns the nonce so it can be passed into the HTML template and added to `<script nonce="${nonce}"></script>`. Multiple nonces may be added by calling `res.getNonce()` multiple times. See the example in the script above. `getNonce` is also exported separately so it can be used independently of `cspMiddleware`.

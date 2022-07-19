@@ -1,0 +1,31 @@
+{
+  "name": "@sempervirens/plugin-csp-middleware",
+  "version": "0.0.1",
+  "description": "An interface for adding Content-Security-Policy Express response headers",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cd test && mocha *.test.js --timeout=5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukedupuis/sempervirens-plugin-csp-middleware.git"
+  },
+  "keywords": [
+    "plugins",
+    "middleware",
+    "CSP"
+  ],
+  "author": "Luke Dupuis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukedupuis/sempervirens-plugin-csp-middleware/issues"
+  },
+  "homepage": "https://github.com/lukedupuis/sempervirens-plugin-csp-middleware#readme",
+  "devDependencies": {
+    "@sempervirens/endpoint": "^0.8.2",
+    "@sempervirens/server": "^0.0.5",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
