@@ -1,6 +1,6 @@
 {
   "name": "@sempervirens/plugin-csp-middleware",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An interface for adding Content-Security-Policy Express response headers",
   "main": "index.js",
   "type": "module",
