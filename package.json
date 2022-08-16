@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/lukedupuis/sempervirens-plugin-csp-middleware#readme",
   "devDependencies": {
-    "@sempervirens/endpoint": "^0.9.1",
-    "@sempervirens/server": "^0.3.0",
+    "@sempervirens/endpoint": "^0.9.2",
+    "@sempervirens/server": "^0.3.1",
     "chai": "^4.3.6",
     "mocha": "^10.0.0"
   }
